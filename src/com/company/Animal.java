@@ -6,6 +6,7 @@ public class Animal {
     private String size;
     private String gender;
 
+
     public void printAnimalDetails(){
         System.out.println("\nThe species is:  " + species +
                 "\nThe size is :  " + size +

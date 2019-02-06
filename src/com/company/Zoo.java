@@ -7,6 +7,11 @@ public class Zoo {
 
     private List<Pen> myPens = new ArrayList<>();
 
+
+    public void addAPenToZoo(Pen penName){
+        myPens.add(penName);
+    }
+
     public List<Pen> getMyPens() {
         return myPens;
     }

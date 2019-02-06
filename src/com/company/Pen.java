@@ -5,8 +5,28 @@ import java.util.List;
 
 public class Pen {
 
+    String nameOfPen;
+
     private List<Animal> myAnimals = new ArrayList<>();
     private List<BabyAnimal> myBabyAnimals = new ArrayList<>();
+
+
+    public String getNameOfPen() {
+        return nameOfPen;
+    }
+
+    public void setNameOfPen(String nameOfPen) {
+        this.nameOfPen = nameOfPen;
+    }
+
+    public void addAnimalToPen(Animal animal) {
+        myAnimals.add(animal);
+    }
+
+
+    public void addBabyAnimalToPen(BabyAnimal babyAnimal) {
+        myBabyAnimals.add(babyAnimal);
+    }
 
     public List<Animal> getMyAnimals() {
         return myAnimals;
