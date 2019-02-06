@@ -44,22 +44,23 @@ public class ZooDemo {
                     case 1:
 
                         do {
-                            System.out.println("Set up a new Pen\n");
-
-                            System.out.println("What is the name of the new Pen");
+                            System.out.println("\nYou chose to set up a new pen.");
+                            System.out.println("What is the name of the new pen?");
                             nameOfPen = textScanner.nextLine();
 
                             newPen.setNameOfPen(nameOfPen);
 
                             newZoo.addAPenToZoo(newPen);
 
-                            System.out.println("Would you like to add another pen?\n" +
+                            System.out.println("\nWould you like to add another pen?\n" +
                                     "Press [1] for YES\n" +
-                                    "Press [2} for NO\n");
+                                    "Press [2} for NO");
                             menuOption = numScanner.nextInt();
 
                             if(menuOption == 1){
                                 anotherPen = true;
+                            } else {
+                                anotherPen = false;
                             }
 
                         } while (anotherPen);
@@ -72,7 +73,7 @@ public class ZooDemo {
 
                         do {
 
-                            System.out.println("Add Animal to a Pen\n");
+                            System.out.println("You chose to add an Animal to a pen.");
 
                             System.out.println("What is the species of the animal you'd like to add:  ");
                             species = textScanner.nextLine();
@@ -89,11 +90,13 @@ public class ZooDemo {
 
                             System.out.println("Would you like to add another animal?\n" +
                                     "Press [1] for YES\n" +
-                                    "Press [2} for NO\n");
+                                    "Press [2} for NO");
                             menuOption = numScanner.nextInt();
 
                             if(menuOption == 1){
                                 anotherAnimal = true;
+                            } else {
+                                anotherAnimal = false;
                             }
 
                         } while (anotherAnimal);
@@ -103,7 +106,7 @@ public class ZooDemo {
 
                         do {
 
-                            System.out.println("Add a Baby Animal to a Pen\n");
+                            System.out.println("You chose to add a Baby Animal to a pen.");
 
                             System.out.println("What is the age of the baby animal you'd like to add:  ");
                             age = numScanner.nextInt();
@@ -121,13 +124,15 @@ public class ZooDemo {
 
                             newPen.addBabyAnimalToPen(newBabyAnimal);
 
-                            System.out.println("Would you like to add another animal?\n" +
+                            System.out.println("\nWould you like to add another animal?\n" +
                                     "Press [1] for YES\n" +
-                                    "Press [2} for NO\n");
+                                    "Press [2] for NO");
                             menuOption = numScanner.nextInt();
 
                             if(menuOption == 1){
                                 anotherAnimal = true;
+                            } else {
+                                anotherAnimal = false;
                             }
 
                         } while (anotherAnimal);
